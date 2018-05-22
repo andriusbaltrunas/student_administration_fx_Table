@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/null" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="512.0" prefWidth="598.0">
+         <children>
+            <TableView fx:id="studentTableView" layoutY="6.0" prefHeight="332.0" prefWidth="598.0">
+              <columns>
+                <TableColumn fx:id="idTableColumn" prefWidth="49.0" text="ID" />
+                <TableColumn fx:id="nameTableColumn" prefWidth="146.0" text="NAME" />
+                  <TableColumn fx:id="surnameTableColumn" prefWidth="149.0" text="SURNAME" />
+                  <TableColumn fx:id="phoneTableColumn" prefWidth="118.0" text="PHONE" />
+                  <TableColumn fx:id="emailTableColumn" prefWidth="135.0" text="EMAIL" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
